@@ -7,8 +7,7 @@ import home from './pages/home';
 
 function App() {
 	return (
-		
-			<Router>
+			<Router basename={ process.env.PUBLIC_URL } >
 				<div>
 					<Switch>
 						<Route exact path="/" component={home} />
@@ -17,7 +16,7 @@ function App() {
 					</Switch>
 				</div>
 			</Router>
-		
+
 	);
 }
 
